@@ -1,0 +1,31 @@
+body {
+  background: ##FEBF10;
+}
+
+#form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #9EB847;
+  background: #F3F3CC;
+  border-radius: 5%;
+}
+
+#boardgame-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.primary, #title, #players, #time {
+  margin: 0.25rem 0.1rem;
+  padding: 0.25rem;
+}
+
+.boardgame-list-item {
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #9EB847;
+  border-radius: 5%;
+  background: #F3F3CC;
+}

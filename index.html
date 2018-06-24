@@ -12,23 +12,23 @@
     <form id="new-boardgame-form">
       <div id="form-wrapper">
         <div class="form-item">
-          <label for="title" class="primary">Title</label>
+          <label for="title" class="primary">Title</label><br>
           <input type="text" id="title">
         </div>
         <div class="form-item">
-          <label for="player-count" class="primary">Number of Players</label>
-          <input type="number" id="player-count">
+          <label for="players" class="primary">Number of Players</label><br>
+          <input type="number" id="players">
         </div>
         <div class="form-item">
-          <p>Avg. Play Time</p>
-          <label for="play-time" class="primary"></label>
-          <input type="radio" name="radio-button" value="under-1" checked>Under 1 Hour<br>
-          <input type="radio" name="radio-button" value="between-1-2">Between 1 and 2 Hours<br>
-          <input type="radio" name="radio-button" value="over-2">Over Two hours
+          <label for="time" class="primary">Average Play Time</label><br>
+          <input type="radio" name="radio-button" id="time" value="under 1 hour" checked>Under 1 Hour<br>
+          <input type="radio" name="radio-button" id="time" value="between 1+2 hours">Between 1 and 2 Hours<br>
+          <input type="radio" name="radio-button" id="time" value="over 2 hours">Over Two hours
         </div>
       </div>
       <input type="submit" value="save">
     </form>
+
     <h1>Boardgame List</h1>
     <div id="boardgame-list"></div>
   </body>
