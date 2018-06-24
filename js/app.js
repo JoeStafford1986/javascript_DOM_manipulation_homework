@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('Dom Content Loaded');
 
   const newItemForm = document.querySelector('#new-boardgame-form');
-  newItemForm.addEventListener('submit', handleNewItemSubmit)
+  newItemForm.addEventListener('submit', handleNewItemSubmit);
 });
 
 const handleNewItemSubmit = function (event) {
@@ -20,14 +20,16 @@ const createBoardgameListItem = function (form) {
   const boardgameListItem = document.createElement('li');
   boardgameListItem.classList.add('boardgame-list-item');
 
-  const title = buildElement('h2', form.title.value);
+  const titleString =  form.title.value;
+  const title = buildElement('h2', `${titleString}`);
   boardgameListItem.appendChild(title);
 
-  const playersInteger = `${form.players.value}`;
-  const players = buildElement('h3', playersInteger);
+  const playersInteger = form.players.value;
+  const players = buildElement('h3', `Maximum No. Players: ${playersInteger}`);
   boardgameListItem.appendChild(players);
 
-  const time = buildElement('h3', form.time.value);
+  const timeString = form.time.value;
+  const time = buildElement('h3', `Average Play Time : ${timeString}`);
   boardgameListItem.appendChild(time);
 
   return boardgameListItem;
